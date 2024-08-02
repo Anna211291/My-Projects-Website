@@ -9,9 +9,9 @@ html {
 :root {
   /* Colors */
 
-  --color-beige: #FFF8DB;
-  --color-pink: #FFC7ED;
-  --color-light-grey: #7D8ABC;
+  --color-beige: #fff8db;
+  --color-pink: #ffc7ed;
+  --color-light-grey: #7d8abc;
   --color-dark-grey: #304463;
 
   /* Fonts */
@@ -122,7 +122,8 @@ button {
     line-height: 1.2;
     text-align: start;
   }
-} */
+}
+*/
  
 /* Header styles */
 .nav-list {
@@ -163,7 +164,7 @@ button {
 .nav-menu:focus {
   color: var(--color-pink);
   font-size: 26px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-menu::after {
   content: "";
@@ -218,11 +219,11 @@ button {
 /* Hero section styles */
 .hero {
   background-color: var(--color-beige);
-  
+
   width: 100vw;
   height: calc(100vh - (72px + 50px));
   padding: 60px 0;
-display: flex;
+  display: flex;
 }
 
 @media only screen and (min-width: 768px) {
@@ -237,7 +238,6 @@ display: flex;
   justify-content: center;
 }
 .main-title {
-  
   font-size: 32px;
   line-height: 1.11;
   /* text-align: center; */
@@ -265,18 +265,18 @@ display: flex;
   }
 }
 .about-me {
-font-size: 24px;
-/* text-align: right; */
-min-width: 300px;
-max-width: 400px;
-margin-bottom: 40px;
+  font-size: 24px;
+  /* text-align: right; */
+  min-width: 300px;
+  max-width: 400px;
+  margin-bottom: 40px;
 }
 @media only screen and (min-width: 1158px) {
   .about-me {
     font-size: 28px;
     line-height: 1.07;
     max-width: 600px;
-    margin-bottom: 80px; 
+    margin-bottom: 80px;
     /* max-width: 496px; */
     /* margin-bottom: 48px; */
   }
@@ -287,32 +287,34 @@ margin-bottom: 40px;
 }
 
 .projects-links li a {
-color: var(--color-pink);
-font-size: 28px;
+  color: var(--color-pink);
+  font-size: 28px;
 }
 @media only screen and (min-width: 768px) {
-.projects-links li a {
+  .projects-links li a {
     font-size: 46px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .projects-links li a {
     font-size: 70px;
-
   }
 }
 /* Projects sections styles */
 .projects-section {
   /* display: flex; */
-  padding: 48px 20px;
+  /* width: 100vw;
+  height: calc(100vh - (72px + 50px)); */
+  padding: 48px 10px;
   background-color: var(--color-beige);
+  margin: auto 0;
 }
 .projects-list {
   display: flex;
   row-gap: 48px;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 /* .text-portfolio {
   font-size: 16px;
@@ -325,7 +327,7 @@ font-size: 28px;
   background: var(--color-pink);
   flex-basis: calc
     ((100% - var(--indent-vertical) * (var(--items)-1)) / var(--items));
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .portfolio-item {
@@ -340,8 +342,8 @@ font-size: 28px;
   /* text-align: start; */
 }
 @media only screen and (min-width: 768px) {
-  .project-section {
-    padding: 64px 0 96px;
+  .projects-section {
+    /* padding: 64px 0 96px; */
   }
   .project-card {
     width: 356px;
@@ -361,8 +363,8 @@ font-size: 28px;
   } */
 }
 @media only screen and (min-width: 1158px) {
-  .project-section {
-    padding: 100px 0 120px;
+  .projects-section {
+    /* padding: 100px 0 120px; */
   }
   .project-card {
     width: 360px;
@@ -409,10 +411,10 @@ font-size: 28px;
 }
 /* Footer section styles */
 .footer-section {
-border-top: 3px solid var(--color-pink);
+  border-top: 3px solid var(--color-pink);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding: 10px 0;
+  padding: 10px 0;
 }
 .footer-section > p {
   font-size: 18px;
@@ -422,18 +424,15 @@ border-top: 3px solid var(--color-pink);
   color: var(--color-pink);
 }
 @media only screen and (min-width: 768px) {
-.footer-section {
+  .footer-section {
     padding: 20px 0;
   }
 
-  .footer-section>p {
+  .footer-section > p {
     font-size: 20px;
- 
   }
-
 }
 @media only screen and (min-width: 1158px) {
-  
 }
 /* Modal window */
 
@@ -461,7 +460,7 @@ border-top: 3px solid var(--color-pink);
   border: none;
   fill: var(--color-beige);
 }
-.mobail-menu-close-btn > svg{
+.mobail-menu-close-btn > svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -479,12 +478,12 @@ border-top: 3px solid var(--color-pink);
   border: none;
   outline: none;
   margin-left: auto;
-
 }
 .menu-toggle > svg {
-    stroke: var(--color-pink);
+  stroke: var(--color-pink);
 }
-.menu-toggle>svg:hover, .menu-toggle>svg:focus {
+.menu-toggle > svg:hover,
+.menu-toggle > svg:focus {
   stroke: var(--color-beige);
 }
 @media only screen and (min-width: 768px) {
@@ -573,4 +572,33 @@ border-top: 3px solid var(--color-pink);
 
 .social-icon {
   fill: var(--color-beige);
+}
+.contacts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .contacts-page {
+    padding: 60px;
+  }
+}
+.contacts-page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contacts-page-list a.social-link {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  display: inline-flex;
+}
+.project-thumb > img {
+  object-fit: cover;
+  width: 396px;
+  height: 280px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
