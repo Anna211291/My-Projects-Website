@@ -21,24 +21,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Header section -->
+ <!-- Header section -->
     <header class="header-section">
       <div class="container header-container">
         <nav class="navigation">
           <a class="link logo" href="./index.html">
-            <b>AnnA&#10697;</b></a>
+            AnnA&#10697;</a
+          >
           <ul class="list nav-list">
             <li class="nav-item">
-              <a class="link nav-menu active" href="./index.html">Home</a>
+              <a class="link nav-menu" href="./index.html">Home</a>
             </li>
-            <li class="nav-item">
+             <li class="nav-item">
               <a class="link nav-menu" href="./my-projects.html">My projects</a>
             </li>
             <li class="nav-item">
               <a class="link nav-menu" href="./team-projects.html">Team projects</a>
             </li>
             <li class="nav-item">
-              <a class="link nav-menu" href="./contacts.html">Contacts</a>
+              <a class="link nav-menu active" href="./contacts.html">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -69,30 +70,27 @@
       </div>
     </header>
     <main>
-      <!-- Hero section -->
-      <section class="hero">
-        <div class="container">
-          <h1 class="main-title">Welcome to My Website &#10697;</h1>
-          <p class="about-me">My name is Anna and I am a Front-End-Developer. On this website I want to present to you my works and team projects in which I participated.</p>
-          <ul class=" list projects-links">
-            <li ><a href="./my-projects.html" class="link">My projects</a></li>
-            <li ><a href="./team-projects.html" class="link">Team projects</a></li>
-          </ul>
-
-        </div>
-      </section>
-  
-     
-    <!-- Footer section -->
+   
+  <div>
+    <h1>Contacts:</h1>
+    <ul class="list">
+      <li>&#10697;Phone number:</li>
+      <li>&#10697;Email:</li>
+      <li>&#10697;LinkedIn:</li>
+      <li>&#10697;GitHub:</li>
+    </ul>
+  </div>
+</html>
+</main>
+   <!-- Footer section -->
     <footer class="footer-section">
-     
-        <p>&copy; 2024 All Rights Reserved by <span>AnnA&#10697;</span></p>
-     
+      <div class="container footer-container">
+        <p>&copy; 2024 All Rights Reserved by AnnA&#10697;</p>
+      </div>
     </footer>
-
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="mobail-menu-close-btn js-close-menu">
+      <button type="button" class="modal-close-btn js-close-menu">
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -102,14 +100,14 @@
         <li class="nav-item nav-mobile">
           <a class="mobile-link active" href="./index.html">Home</a>
         </li>
-         <li class="nav-item nav-mobile">
-              <a class="mobile-link" href="./my-projects.html">My projects</a>
+        <li class="nav-item">
+              <a class="link nav-menu" href="./my-projects.html">My projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="link nav-menu" href="./team-projects.html">Team projects</a>
             </li>
         <li class="nav-item nav-mobile">
-              <a class="mobile-link" href="./team-projects.html">Team projects</a>
-            </li>
-        <li class="nav-item nav-mobile">
-          <a class="mobile-link" href="./contacts.html">Contacts</a>
+          <a class="mobile-link active" href="./contacts.html">Contacts</a>
         </li>
       </ul>
       <ul class="list mobile-contacts-list">
@@ -126,15 +124,15 @@
       </ul>
       <ul class="mobile-socials list">
         <li class="social-item">
-          <a 
+          <a
             class="social-link link"
-            href="https://github.com/Anna211291"
+            href=""
             target="_blank"
             rel="noopener no-referrer"
-            aria-label="icon-github"
+            aria-label="icon-facebook"
           >
             <svg class="social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-github"></use>
+              <use href="./images/icons.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -153,8 +151,8 @@
         </li>
       </ul>
     </div>
-    <!-- Mobile menu script -->
-    <script
+ <!-- Mobile menu script -->
+     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

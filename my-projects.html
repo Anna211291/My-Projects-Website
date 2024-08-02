@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Web Site</title>
+    <title>Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -25,14 +25,13 @@
     <header class="header-section">
       <div class="container header-container">
         <nav class="navigation">
-          <a class="link logo" href="./index.html">
-            <b>AnnA&#10697;</b></a>
+          <a class="link logo" href="./index.html"> AnnA&#10697;</a>
           <ul class="list nav-list">
             <li class="nav-item">
-              <a class="link nav-menu active" href="./index.html">Home</a>
+              <a class="link nav-menu" href="./index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="link nav-menu" href="./my-projects.html">My projects</a>
+             <li class="nav-item">
+              <a class="link nav-menu active" href="./my-projects.html">My projects</a>
             </li>
             <li class="nav-item">
               <a class="link nav-menu" href="./team-projects.html">Team projects</a>
@@ -55,7 +54,9 @@
         <address class="contacts">
           <ul class="list contacts-list">
             <li class="contacts-item email-link">
-              <a class="link contacts-link" href="mailto:aniakulchytska@gmail.com"
+              <a
+                class="link contacts-link"
+                href="mailto:aniakulchytska@gmail.com"
                 >aniakulchytska@gmail.com</a
               >
             </li>
@@ -69,29 +70,94 @@
       </div>
     </header>
     <main>
-      <!-- Hero section -->
-      <section class="hero">
-        <div class="container">
-          <h1 class="main-title">Welcome to My Website &#10697;</h1>
-          <p class="about-me">My name is Anna and I am a Front-End-Developer. On this website I want to present to you my works and team projects in which I participated.</p>
-          <ul class=" list projects-links">
-            <li ><a href="./my-projects.html" class="link">My projects</a></li>
-            <li ><a href="./team-projects.html" class="link">Team projects</a></li>
-          </ul>
+      <!-- My Project Section -->
+      <section class="projects-section">
 
+          <ul class="list card-set projects-list">
+            <li class="project-card">
+              <a href="https://anna211291.github.io/WebStudio/index.html" class="link link-item-project">
+                <div class="project-thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/banking-app_356w.jpg 356w,
+                      ./images/portfolio/banking-app_360w.jpg 360w,
+                      ./images/portfolio/banking-app_396w.jpg 396w,
+                      ./images/portfolio/banking-app_712w.jpg 712w,
+                      ./images/portfolio/banking-app_720w.jpg 720w,
+                      ./images/portfolio/banking-app_792w.jpg 792w
+                    "
+                    sizes="(min-width: 1158px) 360px,
+                  (min-width: 768px) 356px,
+                  (min-width: 428px) 396px,
+                  100vw"
+                    src="./images/portfolio/banking-app_396w.jpg"
+                    alt="Banking App Interface Concept"
+                    width="396"
+                    height="280"
+                  />
+                  <p class="overlay-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="text-sub project-card-name">
+                    WebStudio
+                  </h2>
+                  <!-- <p class="text-portfolio">App</p> -->
+                </div>
+              </a>
+            </li>
+            
+            <li class="project-card">
+              <a href="https://anna211291.github.io/goit-react-hw-05-movies" class="link link-item-project">
+                <div class="project-thumb">
+                  <img
+                    srcset="
+                      ./images/portfolio/banking-app_356w.jpg 356w,
+                      ./images/portfolio/banking-app_360w.jpg 360w,
+                      ./images/portfolio/banking-app_396w.jpg 396w,
+                      ./images/portfolio/banking-app_712w.jpg 712w,
+                      ./images/portfolio/banking-app_720w.jpg 720w,
+                      ./images/portfolio/banking-app_792w.jpg 792w
+                    "
+                    sizes="(min-width: 1158px) 360px,
+                  (min-width: 768px) 356px,
+                  (min-width: 428px) 396px,
+                  100vw"
+                    src="./images/portfolio/banking-app_396w.jpg"
+                    alt="Banking App Interface Concept"
+                    width="396"
+                    height="280"
+                  />
+                  <p class="overlay-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
+                </div>
+                <div class="portfolio-item">
+                  <h2 class="text-sub project-card-name">
+                    Movies
+                  </h2>
+                  <!-- <p class="text-portfolio">App</p> -->
+                </div>
+              </a>
+            </li>
+
+          </ul>
         </div>
       </section>
-  
-     
+    </main>
     <!-- Footer section -->
     <footer class="footer-section">
-     
-        <p>&copy; 2024 All Rights Reserved by <span>AnnA&#10697;</span></p>
+      
+        <p>&copy; 2024 All Rights Reserved by AnnA&#10697;</p>
      
     </footer>
-
     <!-- Mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
+     <div class="menu-container js-menu-container" id="mobile-menu">
       <button type="button" class="mobail-menu-close-btn js-close-menu">
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
@@ -100,10 +166,10 @@
 
       <ul class="mobile-menu list">
         <li class="nav-item nav-mobile">
-          <a class="mobile-link active" href="./index.html">Home</a>
+          <a class="mobile-link " href="./index.html">Home</a>
         </li>
          <li class="nav-item nav-mobile">
-              <a class="mobile-link" href="./my-projects.html">My projects</a>
+              <a class="mobile-link active" href="./my-projects.html">My projects</a>
             </li>
         <li class="nav-item nav-mobile">
               <a class="mobile-link" href="./team-projects.html">Team projects</a>
